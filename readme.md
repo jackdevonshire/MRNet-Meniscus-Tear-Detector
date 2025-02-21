@@ -7,3 +7,8 @@ Mrnet dataset goes under directory /mrnet and should be in same structure as dow
 data/mrnet/train
 data/mrnet/valid
 data/mrnet/train-meniscus.csv etc etc
+
+Your own MRI scan dicom slice files go in:
+data/myscan/axial/FILES_FOR_SLICES_OF_SCAN
+data/myscan/coronal/FILES_FOR_SLICES_OF_SCAN
+data/myscan/sagittal/FILES_FOR_SLICES_OF_SCAN

@@ -27,6 +27,12 @@ def get_slices(dir):
 
     print(f"Converted DICOM Shape: {slices.shape}")
 
-SAGGITAL_SLICES = get_slices(SAGITTAL_DIR)
+SAGITTAL_SLICES = get_slices(SAGITTAL_DIR)
 AXIAL_SLICES = get_slices(AXIAL_DIR)
 CORONAL_SLICES = get_slices(CORONAL_DIR)
+
+np.save("data/myscan/sagittal.npy", SAGITTAL_SLICES)
+np.save("data/myscan/axial.npy", AXIAL_SLICES)
+np.save("data/myscan/coronal.npy", CORONAL_SLICES)
+
+print("Scans saved as npy files!")
